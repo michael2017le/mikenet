@@ -13,7 +13,8 @@ y = np.sin(x)
 model = mikenet.Sequential(
   mikenet.Linear(input_dim, hidden_dim),
   mikenet.ReLU(),
-  mikenet.Linear(hidden_dim, output_dim))
+  mikenet.Linear(hidden_dim, output_dim)
+)
 
 # This by default uses stochastic gradient descent
 #  using the mean squared error loss function

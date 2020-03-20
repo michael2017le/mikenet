@@ -11,7 +11,8 @@ x = np.random.randn(N, in_shape)
 y = x * 2
 
 linear_model = mikenet.Sequential(
-  mikenet.Linear(in_shape, out_shape))
+  mikenet.Linear(in_shape, out_shape)
+)
 
 # Use stochastic gradient descent
 #  and mean squared error for linear regression
